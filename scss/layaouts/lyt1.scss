@@ -1,0 +1,38 @@
+.LYT1-Wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto;
+    grid-auto-columns: auto;
+    gap: 0px 0px;
+    grid-auto-flow: auto;
+    grid-template-areas:
+        "grd_header"
+        "grd_count"
+        "grd_footer";
+
+    background-color: $cc8;
+    background-image: url(/images/lyt1bk.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    height: 100vh;
+
+    .grd_header {
+        padding: 8px 16px;
+        grid-area: grd_header;
+    }
+
+    .grd_count {
+        padding: 8px 16px 0 16px;
+        grid-area: grd_count;
+    }
+
+    .grd_footer {
+        padding: 16px; 
+        grid-area: grd_footer;
+
+        .ui_fab{
+            float: right;
+        }
+    }
+}

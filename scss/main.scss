@@ -1,0 +1,25 @@
+@import 'abstracts/setting.scss',
+'abstracts/mixins.scss',
+'abstracts/ui_demo.scss';
+
+@import 'base/theme_default.scss';
+
+@import 'components/panel_inf.scss',
+'components/topnav.scss';
+
+@import 'layaouts/lyt1.scss',
+'layaouts/lyt2.scss';
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
