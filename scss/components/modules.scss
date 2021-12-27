@@ -1,0 +1,457 @@
+.module_panel_tlt1 {
+    display: grid;
+    grid-template-columns: 1fr 90px 90px 90px 36px;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 8px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "grs_title1 grs_title2 grs_title3 grs_title4 grd_cta";
+    margin-bottom: 12px;
+
+    .grs_title1 {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 1.8px;
+        font-size: 1em;
+        color: $cc9;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        grid-area: grs_title1;
+    }
+
+    .grs_title2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 40px;
+        padding: 0 8px;
+        color: #FFF;
+        font-size: 0.8em;
+        line-height: 2em;
+        border-radius: 1em;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        grid-area: grs_title2;
+    }
+
+    .grs_title3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 8px;
+        color: #FFF;
+        font-size: 0.8em;
+        line-height: 2em;
+        border-radius: 1em;
+        font-weight: 300;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        grid-area: grs_title3;
+    }
+
+    .grs_title4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 8px;
+        color: #FFF;
+        font-size: 0.8em;
+        line-height: 2em;
+        border-radius: 1em;
+        font-weight: 300;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        grid-area: grs_title4;
+    }
+
+    .grd_cta {
+        grid-area: grd_cta;
+
+        .fab_cta {
+            //border: 1px solid #2ECC71;
+            border-radius: 18px;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 48px;
+            color: #FFF;
+            font-size: 1.5em;
+            border-radius: 1em;
+            font-weight: 300;
+            background-color: $cc5;
+        }
+    }
+}
+
+.module_panel_tlt2 {
+    display: grid;
+    grid-template-columns: 1fr 70px 60px 60px 60px 36px;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 8px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "grs_title1 grs_title2 grs_title3 grs_title4 grs_title5 grd_cta";
+    margin-bottom: 12px;
+
+    .grs_title1 {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 1.8px;
+        font-size: 1em;
+        color: $cc9;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        grid-area: grs_title1;
+    }
+
+    .grs_title2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 40px;
+        padding: 0 8px;
+        color: #FFF;
+        font-size: 0.8em;
+        line-height: 2em;
+        border-radius: 1em;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        grid-area: grs_title2;
+    }
+
+    .grs_title3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 8px;
+        color: #FFF;
+        font-size: 0.8em;
+        line-height: 2em;
+        border-radius: 1em;
+        font-weight: 300;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        grid-area: grs_title3;
+    }
+
+    .grs_title4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 8px;
+        color: #FFF;
+        font-size: 0.8em;
+        line-height: 2em;
+        border-radius: 1em;
+        font-weight: 300;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        grid-area: grs_title4;
+    }
+
+    .grs_title5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 8px;
+        color: #FFF;
+        font-size: 0.8em;
+        line-height: 2em;
+        border-radius: 1em;
+        font-weight: 300;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        grid-area: grs_title5;
+    }
+
+    .grd_cta {
+        grid-area: grd_cta;
+
+        .fab_cta {
+            //border: 1px solid #2ECC71;
+            border-radius: 18px;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 48px;
+            color: #FFF;
+            font-size: 1.5em;
+            border-radius: 1em;
+            font-weight: 300;
+            background-color: $cc5;
+        }
+    }
+}
+
+.module_panel1 {
+    clear: both;
+    display: grid;
+    grid-template-columns: 1fr 90px 90px 90px 36px;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 8px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "grs_title grd_tasks grd_partner grd_fos grd_cta";
+    margin-bottom: 30px;
+
+    .grs_title {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 1.8px;
+        font-size: 1em;
+        color: $cc9;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        grid-area: grs_title;
+    }
+
+    .grd_tasks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: grd_tasks;
+
+        .tasks {
+            min-width: 40px;
+            padding: 0 8px;
+            color: #FFF;
+            font-size: 0.8em;
+            line-height: 2em;
+            border-radius: 1em;
+            text-align: center;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background-color: $cc3;
+        }
+    }
+
+    .grd_partner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: grd_partner;
+
+        .complited {
+            padding: 0 8px;
+            color: #FFF;
+            font-size: 0.8em;
+            line-height: 2em;
+            border-radius: 1em;
+            font-weight: 300;
+            text-align: center;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background-color: $ccsts_complited;
+        }
+
+        .ccsts_draft {
+            padding: 0 8px;
+            color: #FFF;
+            font-size: 0.8em;
+            line-height: 2em;
+            border-radius: 1em;
+            font-weight: 300;
+            text-align: center;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background-color: $ccsts_draft;
+        }
+    }
+
+    .grd_fos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: grd_fos;
+
+        .complited {
+            padding: 0 8px;
+            color: #FFF;
+            font-size: 0.8em;
+            line-height: 2em;
+            border-radius: 1em;
+            font-weight: 300;
+            text-align: center;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background-color: $ccsts_complited;
+        }
+
+        .ccsts_draft {
+            padding: 0 8px;
+            color: #FFF;
+            font-size: 0.8em;
+            line-height: 2em;
+            border-radius: 1em;
+            font-weight: 300;
+            text-align: center;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background-color: $ccsts_draft;
+        }
+    }
+
+    .grd_cta {
+        grid-area: grd_cta;
+
+        .fab_cta {
+            //border: 1px solid #2ECC71;
+            border-radius: 18px;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 48px;
+            color: #FFF;
+            font-size: 1.5em;
+            border-radius: 1em;
+            font-weight: 300;
+            cursor: pointer;
+            background-color: $cc5;
+        }
+    }
+}
+
+.module_panel2 {
+    display: grid;
+    grid-template-columns: 1fr 70px 60px 60px 60px 36px;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 8px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "grs_title1 grs_title2 grs_title3 grs_title4 grs_title5 grd_cta";
+    margin-bottom: 12px;
+
+    .grs_title1 {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 1.8px;
+        font-size: 1em;
+        color: $cc9;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        grid-area: grs_title1;
+    }
+
+    .grs_title2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: grs_title2;
+
+        .frame {
+            min-width: 40px;
+            padding: 0 8px;
+            color: #FFF;
+            font-size: 0.8em;
+            line-height: 2em;
+            border-radius: 1em;
+            text-align: center;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background-color: $cc3;
+        }
+    }
+
+    .grs_title3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: grs_title3;
+
+        .frame {
+            min-width: 40px;
+            padding: 0 8px;
+            color: #FFF;
+            font-size: 0.8em;
+            line-height: 2em;
+            border-radius: 1em;
+            text-align: center;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background-color: $cc3;
+        }
+    }
+
+    .grs_title4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: grs_title4;
+
+        .frame {
+            min-width: 40px;
+            padding: 0 8px;
+            color: #FFF;
+            font-size: 0.8em;
+            line-height: 2em;
+            border-radius: 1em;
+            text-align: center;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background-color: $cc3;
+        }
+    }
+
+    .grs_title5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: grs_title5;
+
+        .frame {
+            min-width: 40px;
+            padding: 0 8px;
+            color: #FFF;
+            font-size: 0.8em;
+            line-height: 2em;
+            border-radius: 1em;
+            text-align: center;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background-color: $cc3;
+        }
+    }
+
+    .grd_cta {
+        grid-area: grd_cta;
+
+        .fab_cta {
+            //border: 1px solid #2ECC71;
+            border-radius: 18px;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 48px;
+            color: #FFF;
+            font-size: 1.5em;
+            border-radius: 1em;
+            font-weight: 300;
+            cursor: pointer;
+            background-color: $cc5;
+        }
+    }
+}

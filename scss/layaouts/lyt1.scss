@@ -1,7 +1,7 @@
 .LYT1-Wrapper {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 111px 1fr 88px;
     grid-auto-columns: auto;
     gap: 0px 0px;
     grid-auto-flow: auto;
@@ -15,7 +15,8 @@
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;
-    height: 100vh;
+    height: 100%;
+    display: block;
 
     .grd_header {
         padding: 8px 16px;

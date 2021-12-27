@@ -5,57 +5,323 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="/css/main.css" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="/script_ui/ui_main.js"></script>
 </head>
-<!--
-<div class="LYT1-Wrapper">
-  <div class="grd_header">
-    <img src="images/lyt1logo.svg" />
+
+<div class="ui_view">
+  <div class="grd_nav">
+    <ol>
+      <li id="partner" class="active_nav">PARTNER</li>
+      <ul id="partner_cnt">
+        <li id="lyt1">layout lyt1</li>
+        <li id="lyt2">layout lyt2</li>
+      </ul>
+      <li id="fos">FOS</li>
+      <ul id="fos_cnt">
+        <li>1.1</li>
+      </ul>
+    </ol>
   </div>
-  <div class="grd_count">
-    <div class="ui_box"><b>DataTable </b> -><a
-        href="https://ui.dhis2.nu/demo/?path=/story/data-display-datatable--column-header-sorting">link</a></div>
-  </div>
-  <div class="grd_footer">
-    <div class="ui_fab">+</div>
-  </div>
-</div>
--->
-<div class="LYT2-Wrapper">
-  <div class="grd_header">
-    <div class="lyt2_topbar">
-      <div class="grd_left">
-        <div class="grd_logo"><img src="images/lyt2logo.svg" /></div>
-        <div class="grd_path">Path</div>
+  <div class="grd_layout">
+    <div class="LYT1-Wrapper">
+      <div class="grd_header">
+        <img src="images/lyt1logo.svg" />
       </div>
-      <div class="grd_right">
+      <div class="grd_count">
+        <div class="ui_box"><b>DataTable </b> -><a
+            href="https://ui.dhis2.nu/demo/?path=/story/data-display-datatable--column-header-sorting">link</a></div>
+      </div>
+      <div class="grd_footer">
+        <div class="ui_fab">+</div>
+      </div>
+    </div>
 
-        <div class="panel_inf">
-          <div class="grd_title">Country</div>
-          <div class="grd_val">Brazil</div>
-        </div>
-        
-        <div class="panel_inf">
-          <div class="grd_title">Partner</div>
-          <div class="grd_val">Bemfam</div>
-        </div>
+    <div class="LYT2-Wrapper">
+      <div class="grd_header">
+        <div class="lyt2_topbar">
+          <div class="grd_left">
+            <div class="grd_logo"><img src="images/lyt2logo.svg" /></div>
+            <div class="grd_path">Path</div>
+          </div>
+          <div class="grd_right">
 
-        <div class="panel_inf">
-          <div class="grd_title">Evaluation</div>
-          <div class="grd_val">Nov 2021</div>
-        </div>
+            <div class="panel_inf">
+              <div class="grd_title">Country</div>
+              <div class="grd_val">Brazil</div>
+            </div>
 
-        <div class="panel_inf">
-          <div class="grd_title">Status</div>
-          <div class="grd_val">in course</div>
-        </div>
+            <div class="panel_inf">
+              <div class="grd_title">Partner</div>
+              <div class="grd_val">Bemfam</div>
+            </div>
 
+            <div class="panel_inf">
+              <div class="grd_title">Evaluation</div>
+              <div class="grd_val">Nov 2021</div>
+            </div>
+
+            <div class="panel_inf">
+              <div class="grd_title">Status</div>
+              <div class="grd_val">in course</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="grd_count">
+        <div class="grd_left">
+          <div class="form0">
+            <div class="l1c1">
+
+              <div class="ui_input_field">
+                <div class="grd_label">Partner <span>*</span></div>
+                <div class="grd_input">Select Org Unit L4</div>
+              </div>
+
+            </div>
+            <div class="l1c2">
+
+              <div class="ui_input_field">
+                <div class="grd_label">Type of assessment <span>*</span></div>
+                <div class="grd_input">Foundational (or) Comprehensive</div>
+              </div>
+
+            </div>
+            <div class="l2c1">
+
+              <div class="ui_input_field">
+                <div class="grd_label">Title <span>*</span></div>
+                <div class="grd_input">Renewal 2021</div>
+              </div>
+
+            </div>
+            <div class="l3c1">
+
+              <div class="ui_input_field">
+                <div class="grd_label">Start date</div>
+                <div class="grd_input">xx xx xx</div>
+              </div>
+
+              <div class="ui_input_field">
+                <div class="grd_label">Fos Leader</div>
+                <div class="grd_input">Username 1</div>
+              </div>
+
+              <div class="ui_input_field">
+                <div class="grd_label"></div>
+                <div class="grd_input">Username 2</div>
+              </div>
+
+              <div class="ui_input_field">
+                <div class="grd_label"></div>
+                <div class="grd_input">Username 3</div>
+              </div>
+
+              <div class="ui_input_field">
+                <div class="grd_label"></div>
+                <div class="grd_input">email cc</div>
+              </div>
+
+              <div class="ui_input_field" style="padding-top: 56px;">
+                <div class="grd_label">Commodity distribution</div>
+                <div class="grd_input">Yes No</div>
+              </div>
+
+            </div>
+            <div class="l3c2">
+
+              <div class="ui_input_field">
+                <div class="grd_label">End date</div>
+                <div class="grd_input">xx xx xx</div>
+              </div>
+
+              <div class="ui_input_field">
+                <div class="grd_label">Partner Leader</div>
+                <div class="grd_input">Name</div>
+              </div>
+
+              <div class="ui_input_field">
+                <div class="grd_label"></div>
+                <div class="grd_input">email</div>
+              </div>
+
+              <div class="ui_input_field">
+                <div class="grd_label"></div>
+                <div class="grd_input">email cc</div>
+              </div>
+
+              <div class="ui_input_field" style="padding-top: 37px;">
+                <div class="grd_label">Annual revenue</div>
+                <div class="grd_input">email cc</div>
+              </div>
+
+              <div class="ui_input_field">
+                <div class="grd_label">Service Provision</div>
+                <div class="grd_input">Yes No</div>
+              </div>
+
+            </div>
+            <div class="l4c1">
+
+              <div class="ui_input_field">
+                <div class="grd_label">Documents</div>
+                <div class="grd_input">file.*</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="grd_right">
+          <div class="grd_right_cont">
+
+            <div class="module_panel_tlt1">
+              <div class="grs_title1"></div>
+              <div class="grs_title2">Open Tasks</div>
+              <div class="grs_title3">Partner</div>
+              <div class="grs_title4">FOS</div>
+            </div>        
+
+            <div class="module_panel1">
+              <div class="grs_title">Fundamental</div>
+              <div class="grd_tasks">
+                <div class="tasks">4</div>
+              </div>
+              <div class="grd_partner">
+                <div class="complited">Complited</div>
+              </div>
+              <div class="grd_fos">
+                <div class="ccsts_draft">Draf</div>
+              </div>
+              <div class="grd_cta"><div class="fab_cta">></div></div>
+            </div>
+
+            <div class="module_panel1">
+              <div class="grs_title">Self Assessment</div>
+              <div class="grd_tasks">
+                <div class="tasks">4</div>
+              </div>
+              <div class="grd_partner">
+                <div class="complited">Complited</div>
+              </div>
+              <div class="grd_fos">
+                <div class="ccsts_draft">Draf</div>
+              </div>
+              <div class="grd_cta"><div class="fab_cta">></div></div>
+            </div>
+
+            <div class="module_panel1">
+              <div class="grs_title">Best Practices</div>
+              <div class="grd_tasks">
+                <div class="tasks">4</div>
+              </div>
+              <div class="grd_partner">
+                <div class="complited">Complited</div>
+              </div>
+              <div class="grd_fos">
+                <div class="ccsts_draft">Draf</div>
+              </div>
+              <div class="grd_cta"><div class="fab_cta">></div></div>
+            </div>
+
+            <div class="module_panel1">
+              <div class="grs_title">Desk review</div>
+              <div class="grd_tasks">
+                <div class="tasks">4</div>
+              </div>
+              <div class="grd_partner">
+                <div class="complited">Complited</div>
+              </div>
+              <div class="grd_fos">
+                <div class="ccsts_draft">Draf</div>
+              </div>
+              <div class="grd_cta"><div class="fab_cta">></div></div>
+            </div>
+
+            <div class="module_panel1">
+              <div class="grs_title">Final review</div>
+              <div class="grd_tasks">
+                <div class="tasks">4</div>
+              </div>
+              <div class="grd_partner">
+                <div class="complited">Complited</div>
+              </div>
+              <div class="grd_fos">
+                <div class="ccsts_draft">Draf</div>
+              </div>
+              <div class="grd_cta"><div class="fab_cta">></div></div>
+            </div>
+
+            <div class="module_panel1">
+              <div class="grs_title">Board review</div>
+              <div class="grd_tasks">
+                <div class="tasks">4</div>
+              </div>
+              <div class="grd_partner">
+                <div class="complited">Complited</div>
+              </div>
+              <div class="grd_fos">
+                <div class="ccsts_draft">Draf</div>
+              </div>
+              <div class="grd_cta"><div class="fab_cta">></div></div>
+            </div>
+
+            <div class="module_panel1">
+              <div class="grs_title">Final decision</div>
+              <div class="grd_tasks">
+                <div class="tasks">4</div>
+              </div>
+              <div class="grd_partner">
+                <div class="complited">Complited</div>
+              </div>
+              <div class="grd_fos">
+                <div class="ccsts_draft">Draf</div>
+              </div>
+              <div class="grd_cta"><div class="fab_cta">></div></div>
+            </div>
+
+            <div class="module_panel_tlt2">
+              <div class="grs_title1"></div>
+              <div class="grs_title2"></div>
+              <div class="grs_title3">Pst due</div>
+              <div class="grs_title4">Cancel</div>
+              <div class="grs_title5">Competed</div>
+            </div>  
+
+            <div class="module_panel2">
+              <div class="grs_title1">Tasks</div>
+              <div class="grs_title2">
+                <div class="frame">28</div>
+              </div>
+              <div class="grs_title3">
+                <div class="frame">3</div>
+              </div>
+              <div class="grs_title4">
+                <div class="frame">15</div>
+              </div>
+              <div class="grs_title5">
+                <div class="frame">60</div>
+              </div>
+              <div class="grd_cta"><div class="fab_cta">></div></div>
+            </div> 
+
+            <div class="module_panel1">
+              <div class="grs_title">Log of submissions</div>
+              <div class="grd_tasks"></div>
+              <div class="grd_partner"></div>
+              <div class="grd_fos"></div>
+              <div class="grd_cta"><div class="fab_cta">></div></div>
+            </div>
+
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
-  <div class="grd_count">
-    <div class="grd_left">Left</div>
-    <div class="grd_right">Right</div>
-  </div>
+
+</div>
 </div>
 
 </html>

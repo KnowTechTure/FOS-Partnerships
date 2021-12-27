@@ -10,7 +10,8 @@
         "grd_count";
 
     background-color: $cc3;
-    height: 100vh;
+    height: 100%;
+    display: none;
 
     .grd_header {
         padding: 8px 16px;
@@ -20,7 +21,7 @@
     .grd_count {
         padding: 8px 16px 0 0;
         display: grid;
-        grid-template-columns: 1fr 356px;
+        grid-template-columns: 1fr auto;
         grid-template-rows: 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
@@ -32,15 +33,76 @@
         background-attachment: fixed;
         background-position: right bottom;
         grid-area: grd_count;
+        height: 100%;
 
         .grd_left {
             padding-left: 16px;
             background-color: $cc9;
+            grid-area: grd_left;
+
+            .form0 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+                grid-auto-columns: auto;
+                grid-auto-rows: auto;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                grid-template-areas:
+                    "l1c1 l1c2"
+                    "l2c1 l2c1"
+                    "l3c1 l3c2"
+                    "l4c1 l4c1";
+
+                //height: 90vh;
+                padding: 8px 0;
+                max-width: 800px;
+                margin: 0 auto;
+
+                .l1c1 {
+                    padding: 14px 4px 0 0;
+                    grid-area: l1c1;
+                }
+
+                .l1c2 {
+                    padding: 14px 0 0 4px;
+                    grid-area: l1c2;
+                }
+
+                .l2c1 {
+                    padding: 14px 0;
+                    grid-area: l2c1;
+                }
+
+                .l3c1 {
+                    padding: 14px 4px 0 0;
+                    grid-area: l3c1;
+                }
+
+                .l3c2 {
+                    padding: 14px 0 0 4px;
+                    grid-area: l3c2;
+                }
+
+                .l4c1 {
+                    padding: 14px 0;
+                    grid-area: l4c1;
+                }
+            }
         }
 
         .grd_right {
-
+            padding: 0 0 0 8px;
             grid-area: grd_right;
+
+            .grd_right_cont {
+                width: 100%;
+                height: auto;
+                background: #60AD8F;
+                opacity: 0.8;
+                padding: 8px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
         }
     }
 
