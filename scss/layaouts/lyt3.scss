@@ -1,6 +1,5 @@
-.LYT2-Wrapper {
+.LYT3-Wrapper {
     display: grid;
-    width: 100%;
     grid-template-columns: 100%;
     grid-template-rows: auto 1fr;
     grid-auto-columns: auto;
@@ -12,7 +11,6 @@
 
     background-color: $cc3;
     height: 100%;
-
 
     .grd_header {
         padding: 8px 16px;
@@ -41,10 +39,7 @@
             background-color: $cc9;
             grid-area: grd_left;
 
-            .frame{
-                overflow-y: scroll;
-
-                .form0 {
+            .form0 {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: auto;
@@ -61,7 +56,6 @@
                 //height: 90vh;
                 padding: 8px 0;
                 max-width: 800px;
-                max-height: calc(100vh - 68px);
                 margin: 0 auto;
 
                 .l1c1 {
@@ -94,9 +88,6 @@
                     grid-area: l4c1;
                 }
             }
-            }
-
-            
         }
 
         .grd_right {
@@ -115,29 +106,3 @@
     }
 
 }
-
-@media (max-width: 1024px) {
-    .LYT2-Wrapper {
-    
-        .grd_count {
-    
-            .grd_left {
-                grid-area: grd_left;
-    
-                .form0 {
-                    grid-template-columns: 1fr!important;
-                    grid-template-areas:
-                        "l1c1"
-                        "l1c2"
-                        "l2c1"
-                        "l3c1"
-                        "l3c2"
-                        "l4c1"
-                        "l4c1"!important;
-                }
-            }
-
-        }
-    
-    }
-  }
