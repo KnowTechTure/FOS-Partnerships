@@ -1,45 +1,10 @@
 $(document).ready(function () {
-
+    var w100 = $(window).width();
+    var wp_200 = w100 - 200;
     var init = 2;
 
+    setDisplayBoardSize();
 
-    $(window).resize(function() {
-        var windowsize = $(window).width();
-
-        $('.LYT2-Wrapper').css({
-            "width": windowsize
-        });
-    });
-
-    // show - hide ui_nav
-    $(document).bind('keypress', function (event) {
-        var w100 = $(window).width();
-        var wp_200 = w100 - 200;
-
-        if (event.which === 83 && event.shiftKey) {
-            // SHIFT + S
-            $('.grd_nav').show();
-            $('.grd_layout').css({
-                "width": wp_200
-            });
-
-            $('.LYT2-Wrapper').css({
-                "width": wp_200
-            });
-
-        };
-        if (event.which === 72 && event.shiftKey) {
-            // SHIFT + H
-            $('.grd_nav').hide();
-            $('.grd_layout').css({
-                "width": w100
-            });
-
-            $('.LYT2-Wrapper').css({
-                "width": w100
-            });
-        }
-    });
 
     switch (init) {
         case 1:
@@ -80,5 +45,68 @@ $(document).ready(function () {
         $("#fos").addClass('active_nav');
 
     });
+
+    // show - hide ui_nav
+    $(document).bind('keypress', function (event) {
+
+        if (event.which === 80 && event.shiftKey) {
+            // SHIFT + P
+
+            setDisplayBoardSize(event.which);
+
+        };
+    });
+
+    function setDisplayBoardSize() {
+
+        if (itsVisible('.grd_nav')) {
+
+            $('.grd_nav').hide();
+
+            $('.grd_layout').css({
+                "width": w100
+            });
+
+            $('.LYT2-Wrapper').css({
+                "width": w100
+            });
+
+        } else {
+
+            $('.grd_nav').show();
+            $('.grd_layout').css({
+                "width": wp_200
+            });
+
+            $('.LYT2-Wrapper').css({
+                "width": wp_200
+            });
+        }
+    }
+
+    $(window).resize(function () {
+        w100 = $(window).width();
+        wp_200 = w100 - 200;
+
+        if (itsVisible('.grd_nav')) {
+            $('.LYT2-Wrapper').css({
+                "width": wp_200
+            });
+        } else {
+            $('.LYT2-Wrapper').css({
+                "width": w100
+            });
+        }
+    });
+
+    function itsVisible(elemento) {
+        var itsVisible = false;
+        if ($(elemento).is(':visible') && $(elemento).css("visibility") != "hidden"
+            && $(elemento).css("opacity") > 0) {
+            itsVisible = true;
+        }
+
+        return itsVisible;
+    }
 
 });
