@@ -1,23 +1,35 @@
 $(document).ready(function () {
     var w100 = $(window).width();
     var wp_200 = w100 - 200;
-    var init = 2;
+    var init = 4;
 
     setDisplayBoardSize();
 
 
     switch (init) {
         case 1:
-            $('.LYT2-Wrapper').hide();
             $('.LYT1-Wrapper').show();
+            $('.LYT2-Wrapper').hide();
+            $('.LYT3-Wrapper').hide();
+            $('.LYTD-Wrapper').hide();
             break;
         case 2:
             $('.LYT1-Wrapper').hide();
             $('.LYT2-Wrapper').show();
+            $('.LYT3-Wrapper').hide();
+            $('.LYTD-Wrapper').hide();
             break;
         case 3:
+            $('.LYT1-Wrapper').hide();
+            $('.LYT2-Wrapper').hide();
+            $('.LYT3-Wrapper').show();
+            $('.LYTD-Wrapper').hide();
             break;
         case 4:
+            $('.LYT1-Wrapper').hide();
+            $('.LYT2-Wrapper').hide();
+            $('.LYT3-Wrapper').hide();
+            $('.LYTD-Wrapper').show();
             break;
     }
 

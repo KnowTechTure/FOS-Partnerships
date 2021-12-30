@@ -1,0 +1,54 @@
+#tabs {
+  list-style: none;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  background: $cc9;
+
+  li {
+    display: inline-block;
+    padding: .5em;
+    margin-right: -4px;
+    color: $cc1;
+    min-width: 90px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 1.2em;
+    font-weight: 800;
+    cursor: pointer;
+
+    &:first-child {
+      border-radius: 9px 0 0;
+    }
+
+    &:hover {
+      color: $cc9;
+      background: $cc1;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .active {
+    color: $cc9;
+    background-color: $cc5;
+
+    &:hover {
+      color: $cc9;
+      background: $cc5;
+      box-shadow: none;
+    }
+  }
+}
+
+
+.tab_cont {
+  float: left;
+  width: 100%;
+  height: calc(100% - 50px);
+  padding: 10px;
+  color: $cc9;
+
+  &:last-child {
+    display: none;
+    //border-bottom: 1px solid #ccc;
+  }
+}

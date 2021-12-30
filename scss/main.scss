@@ -7,11 +7,14 @@
 @import 'components/panel_inf.scss',
 'components/topnav.scss',
 'components/modules.scss',
-'components/my_chip.scss';
+'components/my_chip.scss',
+'components/tabs.scss',
+'components/questions.scss';
 
 @import 'layaouts/lyt1.scss',
 'layaouts/lyt2.scss',
-'layaouts/lyt3.scss';
+'layaouts/lyt3.scss',
+'layaouts/lytd.scss';
 
 *{
   box-sizing: border-box;
