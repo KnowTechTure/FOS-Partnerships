@@ -1,4 +1,4 @@
-.LYTD-Wrapper {
+.LYTQs-Wrapper {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto 1fr;
@@ -33,7 +33,6 @@
         grid-auto-flow: row;
         grid-template-areas:
             "grd_left grd_right"
-            "grd_btns grd_right"
             "grd_bottom_nav grd_right";
 
         background-image: url(/images/lyt3bk.svg);
@@ -62,11 +61,6 @@
                 padding: 8px;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             }
-        }
-
-        .grd_btns {
-            padding: 21px 8px;
-            grid-area: grd_btns;
         }
 
         .grd_bottom_nav {

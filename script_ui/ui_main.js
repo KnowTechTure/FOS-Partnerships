@@ -11,25 +11,25 @@ $(document).ready(function () {
             $('.LYT1-Wrapper').show();
             $('.LYT2-Wrapper').hide();
             $('.LYT3-Wrapper').hide();
-            $('.LYTD-Wrapper').hide();
+            $('.LYTQs-Wrapper').hide();
             break;
         case 2:
             $('.LYT1-Wrapper').hide();
             $('.LYT2-Wrapper').show();
             $('.LYT3-Wrapper').hide();
-            $('.LYTD-Wrapper').hide();
+            $('.LYTQs-Wrapper').hide();
             break;
         case 3:
             $('.LYT1-Wrapper').hide();
             $('.LYT2-Wrapper').hide();
             $('.LYT3-Wrapper').show();
-            $('.LYTD-Wrapper').hide();
+            $('.LYTQs-Wrapper').hide();
             break;
         case 4:
             $('.LYT1-Wrapper').hide();
             $('.LYT2-Wrapper').hide();
             $('.LYT3-Wrapper').hide();
-            $('.LYTD-Wrapper').show();
+            $('.LYTQs-Wrapper').show();
             break;
     }
 
