@@ -1,21 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/*
-$font_nav_tt1: 21px;
-$font_nav_tt2: 12px;
-$font_nav_tts: 0.9em;
-$font_nav_back: 0.8em;
-
-$font_card_label: 1em;
-$font_card_l: 0.8em;
-
-$font_topBar_label: 1em;
-$font_topBar_l: 0.8em;
-
-$ccPrimary: #333333; // prymary
-$color_typ_PLight: #b0b0b8; // prymary light
-$color_typ_PDark: #0c0c0c; // prymary dark
-*/
 ::-webkit-scrollbar{
     width: 3px;
     height: 3px;
@@ -31,4 +15,51 @@ $color_typ_PDark: #0c0c0c; // prymary dark
     background: #F0F0F0;
     border-radius: 0px;
     box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+    }
+
+    // set color questions 1 to 8
+
+    .set_color0 {
+        color: $cc9;
+        background-color: $cc0;
+    }
+
+    .set_color1 {
+        color: $cc9;
+        background-color: $cc0;
+    }
+
+    .set_color2 {
+        color: $cc9;
+        background-color: $cc2;
+    }
+
+    .set_color3 {
+        color: $cc9;
+        background-color: $cc3;
+    }
+
+    .set_color4 {
+        color: $cc0;
+        background-color: $cc4;
+    }
+
+    .set_color5 {
+        color: $cc9;
+        background-color: $cc5;
+    }
+
+    .set_color6 {
+        color: $cc0;
+        background-color: $cc6;
+    }
+
+    .set_color7 {
+        color: $cc9;
+        background-color: $cc7;
+    }
+
+    .set_color8 {
+        color: $cc0;
+        background-color: $cc8;
     }
