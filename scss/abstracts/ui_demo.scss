@@ -68,116 +68,126 @@
 
 ///////////////
 
-    #ui_nav {
-        float: left;
-        width: 200px;
-        color: #FFF;
-        background-color: #333;
+#ui_nav {
+    float: left;
+    width: 200px;
+    color: #FFF;
+    background-color: #333;
 
-        ol {
-            height: 100vh;
+    ol {
+        height: 100vh;
 
+        li {
+            width: 100%;
+            height: 48px;
+            line-height: 48px;
+            padding: 0 8px;
+            cursor: pointer;
+            border-bottom: 2px solid #FFF;
+
+            &:hover {
+                color: $cc9;
+                background-color: $cc5;
+            }
+        }
+
+        ul {
             li {
                 width: 100%;
                 height: 48px;
                 line-height: 48px;
-                padding: 0 8px;
+                padding: 0 8px 0 24px;
+                color: $cc0;
+                background-color: $cc9;
                 cursor: pointer;
-                border-bottom: 2px solid #FFF;
+                border-bottom: 1px solid $cc0;
 
-                &:hover{
+                &:hover {
                     color: $cc9;
                     background-color: $cc5;
                 }
             }
 
-            ul {
-                li {
-                    width: 100%;
-                    height: 48px;
-                    line-height: 48px;
-                    padding: 0 8px 0 24px;
-                    color: $cc0;
-                    background-color: $cc9;
-                    cursor: pointer;
-                    border-bottom: 1px solid $cc0;
-
-                    &:hover{
-                        color: $cc9;
-                        background-color: $cc5;
-                    }
-                }
+            .ui_active_item {
+                color: $cc0;
+                background-color: $cc6;
             }
         }
-
-        #partner_cnt {
-                display: block;
-        }
-
-        #fos_cnt {
-                display: none;
-        }
-
-        .active_nav{
-            color: $cc9;
-            background-color: $cc5;
-        }
     }
 
-    #ui_layout_partner {
-        float: left;
-        width: calc(100% - 200px);
+    #partner_cnt {
+        display: block;
     }
 
-    #ui_layout_fos {
-        float: left;
-        width: calc(100% - 200px);
+    #fos_cnt {
+        display: none;
     }
 
-
-    // Buttons
-
-    .ui_btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 8px 0 0 8px;
-        padding: 0 16px;
-        float: right;
-        min-width: 90px;
-        height: 36px;
+    .ui_active_nav {
         color: $cc9;
-        line-height: 36px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        background-color: $cc3;
-        border-radius: 0 20px;
-        cursor: pointer;
-        box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.31);
-        text-transform: uppercase;
-
-        &:hover {
-            color: $cc9;
-            background: $cc5;
-            box-shadow: none;
-        }
+        background-color: $cc5;
     }
+}
 
-    .ui_fab {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 56px;
-        height: 56px;
-        margin-top: 8px;
-        background-color: $cc2;
-        border-radius: 36px;
-        cursor: pointer;
-        box-shadow: 4px 4px 4px 0px rgba(44, 44, 44, 0.31);
+.active_item {
+    color: $cc9;
+    background-color: $cc5;
+}
 
-        &:hover {
-            color: $cc9;
-            background: $cc5;
-            box-shadow: none;
-        }
+#ui_layout_partner {
+    float: left;
+    width: calc(100% - 200px);
+}
+
+#ui_layout_fos {
+    float: left;
+    width: calc(100% - 200px);
+}
+
+
+// Buttons
+
+.ui_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0 0 8px;
+    padding: 0 16px;
+    float: right;
+    min-width: 90px;
+    height: 36px;
+    color: $cc9;
+    line-height: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: $cc3;
+    border-radius: 0 20px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.31);
+    text-transform: uppercase;
+
+    &:hover {
+        color: $cc9;
+        background: $cc5;
+        box-shadow: none;
     }
+}
+
+.ui_fab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    margin-top: 8px;
+    background-color: $cc2;
+    border-radius: 36px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 0px rgba(44, 44, 44, 0.31);
+
+    &:hover {
+        color: $cc9;
+        background: $cc5;
+        box-shadow: none;
+    }
+}

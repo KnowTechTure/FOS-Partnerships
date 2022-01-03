@@ -97,13 +97,22 @@
   color: #F3F3F3;
   background-color: #C71686;
 }
+#ui_nav ol ul .ui_active_item {
+  color: #383D47;
+  background-color: #00D4D9;
+}
 #ui_nav #partner_cnt {
   display: block;
 }
 #ui_nav #fos_cnt {
   display: none;
 }
-#ui_nav .active_nav {
+#ui_nav .ui_active_nav {
+  color: #F3F3F3;
+  background-color: #C71686;
+}
+
+.active_item {
   color: #F3F3F3;
   background-color: #C71686;
 }

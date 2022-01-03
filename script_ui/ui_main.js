@@ -45,15 +45,17 @@ $(document).ready(function () {
     $("#partner").click(function () {
         $('#fos_cnt').hide();
         $('#partner_cnt').show();
-        $("#fos").removeClass('active_nav');
-        $("#partner").addClass('active_nav');
+        $("#fos").removeClass('ui_active_nav');
+        $("#partner").addClass('ui_active_nav');
 
         $('#ui_layout_partner').show();
         $('.ui_layout_fos').hide();
         entity = 1;
     });
 
-    $(".lyt1").click(function () {
+    $(".lyt1").click(function () {//ui_active_item
+        $(this).siblings().removeClass('ui_active_item');
+        $(this).addClass('ui_active_item');
         switch (entity) {
             case 1:
                 $('#ui_layout_partner .LYT1-Wrapper').show();
@@ -71,6 +73,8 @@ $(document).ready(function () {
     });
 
     $(".lyt2").click(function () {
+        $(this).siblings().removeClass('ui_active_item');
+        $(this).addClass('ui_active_item');
         switch (entity) {
             case 1:
                 $('#ui_layout_partner .LYT1-Wrapper').hide();
@@ -88,6 +92,8 @@ $(document).ready(function () {
     });
 
     $(".lyt3").click(function () {
+        $(this).siblings().removeClass('ui_active_item');
+        $(this).addClass('ui_active_item');
         switch (entity) {
             case 1:
                 $('#ui_layout_partner .LYT1-Wrapper').hide();
@@ -105,6 +111,8 @@ $(document).ready(function () {
     });
 
     $(".lyt4").click(function () {
+        $(this).siblings().removeClass('ui_active_item');
+        $(this).addClass('ui_active_item');
         switch (entity) {
             case 1:
                 $('#ui_layout_partner .LYT1-Wrapper').hide();
@@ -124,8 +132,8 @@ $(document).ready(function () {
     $("#fos").click(function () {
         $('#partner_cnt').hide();
         $('#fos_cnt').show();
-        $("#partner").removeClass('active_nav');
-        $("#fos").addClass('active_nav');
+        $("#partner").removeClass('ui_active_nav');
+        $("#fos").addClass('ui_active_nav');
 
         $('#ui_layout_partner').hide();
         $('.ui_layout_fos').show();
