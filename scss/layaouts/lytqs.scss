@@ -7,7 +7,7 @@
     grid-auto-flow: auto;
     grid-template-areas:
         "grd_header"
-        "grd_count";
+        "grd_cont";
 
     background-color: $cc1;
     height: 100%;
@@ -24,31 +24,38 @@
         }
     }
 
-    .grd_count {
+    .grd_cont {
         padding: 8px 16px 0 0;
         display: grid;
         grid-template-columns: 1fr 400px;
-        grid-template-rows: 1fr auto;
+        grid-template-rows: auto 1fr auto;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            "grd_left grd_right"
+            "grd_category grd_right"
+            "grd_q grd_right"
             "grd_bottom_nav grd_right";
 
         background-image: url(/images/lyt3bk.svg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: right bottom;
-        grid-area: grd_count;
+        grid-area: grd_cont;
         height: 100%;
 
-
-        .grd_left {
+        .grd_category {
             padding: 8px 0 0 16px;
+            height: auto;
+            grid-area: grd_category;
+        }
+
+
+        .grd_q {
+            padding: 0 0 0 16px;
             overflow: none;
-            max-height: calc(100vh - 188px);
+            max-height: calc(100vh - 224px);
             overflow-y: auto;
-            grid-area: grd_left;
+            grid-area: grd_q;
         }
 
         .grd_right {

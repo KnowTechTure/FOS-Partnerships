@@ -13,7 +13,7 @@
 
 .ui_box1 {
     width: 100%;
-    height: calc(100% - 199px);
+    height: 100%;
     background-color: rgba(51, 51, 51, 0.192);
     display: flex;
     align-items: center;
@@ -68,7 +68,7 @@
 
 ///////////////
 
-    .grd_nav {
+    #ui_nav {
         float: left;
         width: 200px;
         color: #FFF;
@@ -84,6 +84,11 @@
                 padding: 0 8px;
                 cursor: pointer;
                 border-bottom: 2px solid #FFF;
+
+                &:hover{
+                    color: $cc9;
+                    background-color: $cc5;
+                }
             }
 
             ul {
@@ -92,9 +97,15 @@
                     height: 48px;
                     line-height: 48px;
                     padding: 0 8px 0 24px;
-                    background-color: blue;
+                    color: $cc0;
+                    background-color: $cc9;
                     cursor: pointer;
-                    border-bottom: 1px solid #FFF;
+                    border-bottom: 1px solid $cc0;
+
+                    &:hover{
+                        color: $cc9;
+                        background-color: $cc5;
+                    }
                 }
             }
         }
@@ -108,12 +119,17 @@
         }
 
         .active_nav{
-            color: #333;
-            background-color: aqua;
+            color: $cc9;
+            background-color: $cc5;
         }
     }
 
-    .grd_layout {
+    #ui_layout_partner {
+        float: left;
+        width: calc(100% - 200px);
+    }
+
+    #ui_layout_fos {
         float: left;
         width: calc(100% - 200px);
     }
