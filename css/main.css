@@ -1197,7 +1197,7 @@
   grid-auto-columns: auto;
   gap: 0px 0px;
   grid-auto-flow: auto;
-  grid-template-areas: "grd_header" "grd_count";
+  grid-template-areas: "grd_header" "grd_cont";
   background-color: #5C3973;
   height: 100%;
 }
@@ -1208,7 +1208,7 @@
 .LYT3-Wrapper .grd_header .panel_inf .grd_title {
   color: #F3F3F3;
 }
-.LYT3-Wrapper .grd_count {
+.LYT3-Wrapper .grd_cont {
   padding: 8px 16px 0 0;
   display: grid;
   grid-template-columns: 1fr 400px;
@@ -1220,19 +1220,19 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: right bottom;
-  grid-area: grd_count;
+  grid-area: grd_cont;
   height: 100%;
 }
-.LYT3-Wrapper .grd_count .grd_left {
+.LYT3-Wrapper .grd_cont .grd_left {
   padding-left: 16px;
   background-color: #5C3973;
   grid-area: grd_left;
 }
-.LYT3-Wrapper .grd_count .grd_right {
+.LYT3-Wrapper .grd_cont .grd_right {
   padding: 0 0 0 8px;
   grid-area: grd_right;
 }
-.LYT3-Wrapper .grd_count .grd_right .grd_right_cont {
+.LYT3-Wrapper .grd_cont .grd_right .grd_right_cont {
   width: 100%;
   height: 98%;
   background: #5C3973;
@@ -1241,11 +1241,11 @@
   border-radius: 10px 10px 0 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.LYT3-Wrapper .grd_count .grd_btns {
+.LYT3-Wrapper .grd_cont .grd_btns {
   padding: 21px 8px;
   grid-area: grd_btns;
 }
-.LYT3-Wrapper .grd_count .grd_bottom_nav {
+.LYT3-Wrapper .grd_cont .grd_bottom_nav {
   padding: 0 4px 16px 16px;
   grid-area: grd_bottom_nav;
   display: grid;
@@ -1257,19 +1257,19 @@
   grid-auto-flow: row;
   grid-template-areas: "grd_back grd_jumper grd_next";
 }
-.LYT3-Wrapper .grd_count .grd_bottom_nav .grd_jumper {
+.LYT3-Wrapper .grd_cont .grd_bottom_nav .grd_jumper {
   display: flex;
   align-items: center;
   justify-content: center;
   grid-area: grd_jumper;
 }
-.LYT3-Wrapper .grd_count .grd_bottom_nav .grd_back {
+.LYT3-Wrapper .grd_cont .grd_bottom_nav .grd_back {
   display: flex;
   align-items: center;
   justify-content: center;
   grid-area: grd_back;
 }
-.LYT3-Wrapper .grd_count .grd_bottom_nav .grd_next {
+.LYT3-Wrapper .grd_cont .grd_bottom_nav .grd_next {
   display: flex;
   align-items: center;
   justify-content: center;
