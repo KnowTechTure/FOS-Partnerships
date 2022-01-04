@@ -270,7 +270,7 @@
   grid-area: grd_val;
 }
 
-.lyt2_topbar {
+.lyt_topbar1 {
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
@@ -279,7 +279,7 @@
   grid-auto-flow: row;
   grid-template-areas: "grd_left grd_right";
 }
-.lyt2_topbar .grd_left {
+.lyt_topbar1 .grd_left {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -288,16 +288,16 @@
   grid-template-areas: "grd_logo" "grd_path";
   grid-area: grd_left;
 }
-.lyt2_topbar .grd_left .grd_logo {
+.lyt_topbar1 .grd_left .grd_logo {
   grid-area: grd_logo;
 }
-.lyt2_topbar .grd_left .grd_path {
+.lyt_topbar1 .grd_left .grd_path {
   color: #FFF;
   display: flex;
   align-items: center;
   grid-area: grd_path;
 }
-.lyt2_topbar .grd_right {
+.lyt_topbar1 .grd_right {
   grid-area: grd_right;
 }
 

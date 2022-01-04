@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var entity = 2; // 1.- partenr | 2.- FOS
-    var init_lyt = 4;
+    var init_lyt = 1;
 
     switch (entity) {
         case 1:
