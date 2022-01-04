@@ -53,9 +53,9 @@ $(document).ready(function () {
         entity = 1;
     });
 
-    $(".lyt1").click(function () {//ui_active_item
-        $(this).siblings().removeClass('ui_active_item');
-        $(this).addClass('ui_active_item');
+    $(".lyt1").click(function () {//ui_ui_active_item
+        $(this).siblings().removeClass('ui_ui_active_item');
+        $(this).addClass('ui_ui_active_item');
         switch (entity) {
             case 1:
                 $('#ui_layout_partner .LYT1-Wrapper').show();
@@ -73,8 +73,8 @@ $(document).ready(function () {
     });
 
     $(".lyt2").click(function () {
-        $(this).siblings().removeClass('ui_active_item');
-        $(this).addClass('ui_active_item');
+        $(this).siblings().removeClass('ui_ui_active_item');
+        $(this).addClass('ui_ui_active_item');
         switch (entity) {
             case 1:
                 $('#ui_layout_partner .LYT1-Wrapper').hide();
@@ -92,8 +92,8 @@ $(document).ready(function () {
     });
 
     $(".lyt3").click(function () {
-        $(this).siblings().removeClass('ui_active_item');
-        $(this).addClass('ui_active_item');
+        $(this).siblings().removeClass('ui_ui_active_item');
+        $(this).addClass('ui_ui_active_item');
         switch (entity) {
             case 1:
                 $('#ui_layout_partner .LYT1-Wrapper').hide();
@@ -111,8 +111,8 @@ $(document).ready(function () {
     });
 
     $(".lyt4").click(function () {
-        $(this).siblings().removeClass('ui_active_item');
-        $(this).addClass('ui_active_item');
+        $(this).siblings().removeClass('ui_ui_active_item');
+        $(this).addClass('ui_ui_active_item');
         switch (entity) {
             case 1:
                 $('#ui_layout_partner .LYT1-Wrapper').hide();
