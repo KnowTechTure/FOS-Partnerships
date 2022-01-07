@@ -1,0 +1,26 @@
+.LYT4-Wrapper {
+
+    .grd_header {
+        color: #fff;
+        background-color: #5C3973 !important;;
+    }
+
+    .grd_cont {
+        padding: 8px 16px 0 0;
+
+        th, td {
+            border: 0px;
+            padding-bottom: 0px;
+        }
+
+        th {
+            font-weight: bold;
+        }
+    }
+
+    .grd_btns {
+        padding: 21px 8px;
+        grid-area: grd_btns;
+    }
+
+}
