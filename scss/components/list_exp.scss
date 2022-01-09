@@ -6,6 +6,48 @@
     grid-area: grd_left;
 }
 
+
+.table {
+    details {
+        width: 100%;
+
+        summary {
+            padding: 8px;
+            background-color: #383D47;
+            color: #F3F3F3;
+            text-transform: uppercase;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            border-top: 0px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            text-align: justify;
+
+            li {
+                font-size: .9em;
+                padding: 8px;
+                background-color: #f3f3f3;
+                color: #383d47;
+                width: 100%;
+                margin: 0px !important;
+                text-align: justify;
+            }
+        }
+
+        .comment {
+            width: 100%;
+            padding: 5px;
+            background-color: #fff;
+            height: auto;
+            border: 2px solid #000;
+        }
+    }
+}
+
 .container {
     width: 100%;
 
