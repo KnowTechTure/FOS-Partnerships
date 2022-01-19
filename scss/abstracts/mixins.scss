@@ -38,6 +38,7 @@
     background-color: $cc0;
     color: $cc9;
     text-transform: uppercase;
+    list-style: none;
 
     &::-webkit-details-marker {
         margin-right: 14px;
@@ -62,6 +63,7 @@
     background-color: $cc2;
     color: $cc9;
     text-transform: uppercase;
+    list-style-type: none;
 
     &::-webkit-details-marker {
         margin-right: 14px;
@@ -74,6 +76,7 @@
     background-color: $cc6;
     color: $cc0;
     text-transform: uppercase;
+    list-style: none;
 
     &::-webkit-details-marker {
         margin-right: 14px;

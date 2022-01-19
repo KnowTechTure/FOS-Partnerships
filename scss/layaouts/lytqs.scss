@@ -92,6 +92,18 @@
                 align-items: center;
                 justify-content: center;
                 grid-area: grd_jumper;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: bold;
+
+                div {
+                    background-color: #fff;
+                    color: #5c3973;
+                    border: 1px solid #5c3973;
+                    border-radius: 12px;
+                    padding: 5px;
+                    margin: 5px;
+                }
             }
 
             .grd_back {
@@ -107,7 +119,6 @@
                 justify-content: center;
                 grid-area: grd_next;
             }
-
         }
     }
 

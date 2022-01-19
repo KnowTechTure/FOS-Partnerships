@@ -68,6 +68,7 @@
 
         .fos_ra {
             @include cont_qs4;
+            list-style: none;
 
             span {
                 margin-left: 12px;
@@ -84,13 +85,13 @@
 
         .partner_type {
             @include cont_qs2;
-            span {
-                margin-left: 12px;
-                padding: 2px 8px;
-                border: 2px solid $cc9;
-                border-radius: 4px;
-                text-transform: capitalize;
-            }
+            // span {
+            //     margin-left: 12px;
+            //     padding: 2px 8px;
+            //     border: 2px solid $cc9;
+            //     border-radius: 4px;
+            //     text-transform: capitalize;
+            // }
         }
 
         .between {
